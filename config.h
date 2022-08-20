@@ -93,9 +93,12 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+<<<<<<< HEAD
 /* bg opacity */
 float alpha = 0.8;
 
+=======
+>>>>>>> origin/HEAD
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
@@ -134,7 +137,11 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 258;
 unsigned int defaultbg = 259;
+<<<<<<< HEAD
 unsigned int defaultcs = 255;
+=======
+unsigned int defaultcs = 256;
+>>>>>>> origin/HEAD
 static unsigned int defaultrcs = 257;
 
 /*
@@ -144,7 +151,11 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
+<<<<<<< HEAD
 static unsigned int cursorshape = 4;
+=======
+static unsigned int cursorshape = 2;
+>>>>>>> origin/HEAD
 
 /*
  * Default columns and rows numbers
@@ -174,6 +185,7 @@ static unsigned int defaultattr = 11;
 static uint forcemousemod = ShiftMask;
 
 /*
+<<<<<<< HEAD
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
@@ -213,6 +225,8 @@ ResourcePref resources[] = {
 
 
 /*
+=======
+>>>>>>> origin/HEAD
  * Internal mouse shortcuts.
  * Beware that overloading Button1 will disable the selection.
  */
@@ -243,8 +257,11 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+<<<<<<< HEAD
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+=======
+>>>>>>> origin/HEAD
 };
 
 /*
