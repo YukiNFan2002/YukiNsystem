@@ -939,7 +939,11 @@ ttyresize(int tw, int th)
 }
 
 void
+<<<<<<< HEAD
 ttyhangup()
+=======
+ttyhangup(void)
+>>>>>>> af52c1a (didnt make before... it should now!)
 {
 	/* Send SIGHUP to shell */
 	kill(pid, SIGHUP);
